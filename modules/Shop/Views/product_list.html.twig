@@ -1,0 +1,13 @@
+{% extends 'layouts\default' %}
+
+{% block products %}
+<h2>Module</h2>
+<ul>
+	{% for product in products %}
+	<li>
+		Model: {{ product.model }},
+		Price: {{ product.price }}
+	</li>
+	{% endfor %}
+</ul>
+{% endblock %}
